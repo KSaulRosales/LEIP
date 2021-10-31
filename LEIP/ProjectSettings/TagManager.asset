@@ -44,12 +44,18 @@ TagManager:
   - name: Background1
     uniqueID: 3068707687
     locked: 0
+  - name: Walls
+    uniqueID: 2755077303
+    locked: 0
   - name: Background2
     uniqueID: 2157828255
+    locked: 0
+  - name: Foreground
+    uniqueID: 3202408553
     locked: 0
   - name: Player
     uniqueID: 1121255789
     locked: 0
-  - name: Foreground
-    uniqueID: 3202408553
+  - name: Most foreground
+    uniqueID: 3915966977
     locked: 0
