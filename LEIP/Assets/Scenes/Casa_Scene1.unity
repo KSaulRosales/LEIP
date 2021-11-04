@@ -7114,7 +7114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene: Casa_Scene2
   playerPosition: {x: 0.484, y: 2.782}
-  playerStorage: {fileID: 11400000, guid: 305997d454d06ae4b86fbf5454c9462e, type: 2}
+  playerStorage: {fileID: 11400000, guid: 47a4fdbf6c2efdd4989f6503052d29f0, type: 2}
 --- !u!61 &1969665850
 BoxCollider2D:
   m_ObjectHideFlags: 0
