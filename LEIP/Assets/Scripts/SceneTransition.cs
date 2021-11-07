@@ -8,6 +8,7 @@ public class SceneTransition : MonoBehaviour
     public string scene;
     public Vector2 playerPosition;
     public VectorValue playerStorage;
+    Vector2 startPos=new Vector2(-7.5f,0.8f);
 
     public void OnTriggerEnter2D(Collider2D collision)
     {

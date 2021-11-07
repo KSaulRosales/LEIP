@@ -20,7 +20,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Dectectamos el movimiento en un vector
+        if (!PauseMenu.GameIsPaused)
+        {
+            //Dectectamos el movimiento en un vector
         mov = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
@@ -47,6 +49,8 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("Walking", false);
         }
+        }
+        
     }
     private void FixedUpdate()
     {
