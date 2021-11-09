@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -113,9 +113,9 @@ MonoBehaviour:
     width: 1536
     height: 731
   m_MinSize: {x: 683, y: 498}
-  m_MaxSize: {x: 18004, y: 14048}
+  m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 93
+  controlID: 149
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,9 +138,9 @@ MonoBehaviour:
     width: 1171
     height: 731
   m_MinSize: {x: 406, y: 498}
-  m_MaxSize: {x: 14002, y: 14048}
+  m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 94
+  controlID: 57
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 95
+  controlID: 58
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,10 +241,10 @@ MonoBehaviour:
     y: 427
     width: 1171
     height: 304
-  m_MinSize: {x: 332, y: 274}
-  m_MaxSize: {x: 14002, y: 10024}
+  m_MinSize: {x: 336, y: 274}
+  m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 52
+  controlID: 78
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -291,8 +291,8 @@ MonoBehaviour:
     y: 0
     width: 654
     height: 304
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 124}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -373,7 +373,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -434,9 +434,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 22350000
+      m_SelectedIDs: e0300000
       m_LastClickedID: 0
-      m_ExpandedIDs: 8603ffff0409ffff3e0effff4c13ffff4e14ffff5e15ffffc415ffff6e18ffff1419ffffce1cffffec20ffff0821ffff1023fffff423ffff2025ffff3825ffffa426ffffac26ffffb426ffffbc26ffffc626ffff6027ffffda27ffff4028ffff2829ffff162affffe62bfffff82bffff0a2cffff902cffff742dffff602effff962efffffc2effff7a36ffff8c36ffffbe37ffff6038ffff9038fffff838ffff2239ffff423bffff443bffff623bfffff04bffff464cffffaa56ffff5658ffff3a5effff1461ffff4a70ffffa670fffffc74ffffe48bffff908cffff368effff4e8effff548effff5c8effff648effff6c8effff748effffb48effffc68effffd88effff408fffff588fffff8090ffff8490ffff8e90ffff9290ffff9690ffff7692ffff3893ffff3e94ffffd09dffff1e9effff809effffc69effff089fffff209fffff229fffff269fffff2a9fffff2e9fffff329ffffff6a3ffff0ea4ffff10a4ffff14a4ffff18a4ffff1ca4ffff20a4ffff8ca7ffff08a8ffff20a8ffff4ca9ffff54a9ffff62a9ffff6aa9ffff72a9ffffb6a9ffffc8a9ffff22acffffd8adffff7cafffffb0b4ffff38b5ffffbab5ffff4eb6ffff98b6ffffb0b6ffffb2b6ffffb6b6ffffbab6ffffbeb6ffffc2b6ffff24b7ffff3cb7ffff68b8ffff70b8ffff7eb8ffff86b8ffff8eb8ffffa6b9ffffb4bbffffaebcffffc8c2ffff00c3ffff9cc3ffff54c7ffff24caffff00cbffff70d8ffff74ddffffd6e0ffff30e8ffff5ce9ffffdce9fffffa380000c23c0000383d0000743d00008e3d00002a3e00001e4d0000404d00004a4d0000544d0000d84e0000664f000028500000b6530000d8530000e2530000ec53000096560000b8560000c2560000cc5600008c5b0000ae5b0000b85b0000c25b0000705c0000fe5c00005a5d000062630000846300008e6300009863000012640000666a00007e6b0000986b0000286c0000586d00001a8b0000188f00000e98000018980000269e000028a600000cad000016ad00004ec40000
+      m_ExpandedIDs: c4f8ffffdefbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -491,9 +491,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.745892, y: 1.0382504, z: -1.6054688}
+    m_Target: {x: -3.245611, y: 34.930344, z: -1.2127103}
     speed: 2
-    m_Value: {x: -5.745892, y: 1.0382504, z: -1.6054688}
+    m_Value: {x: -3.245611, y: 34.930344, z: -1.2127103}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -525,15 +525,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 17.89023
+    m_Target: 8.220068
     speed: 2
-    m_Value: 17.89023
+    m_Value: 8.220068
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.045766618, y: -0.95313793, z: 0.23356141, w: 0.18676871}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -675,20 +675,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/NPCs_Assets
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/NPCs_Assets
   m_LastFoldersGridSize: 60
   m_LastProjectPath: D:\Indie Dev\UnityProjects\LEIP\LEIP
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 48340000
-    m_LastClickedID: 13384
-    m_ExpandedIDs: 0000000010320000d6330000543400000065000098660000ac660000
+    m_SelectedIDs: e0300000
+    m_LastClickedID: 12512
+    m_ExpandedIDs: 00000000e426000094270000502800007e2a00003e2c0000362e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -716,7 +716,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000010320000d633000054340000
+    m_ExpandedIDs: 00000000e426000094270000502800007e2a00003e2c0000362e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -760,7 +760,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 13}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
