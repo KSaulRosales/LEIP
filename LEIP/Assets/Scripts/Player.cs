@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     Rigidbody2D rb2d;
     Vector2 mov;
     public VectorValue startingPosition;
+    public LayerMask interactableLayer;
+    public LayerMask solidObjectsLayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,32 +25,40 @@ public class Player : MonoBehaviour
         if (!PauseMenu.GameIsPaused)
         {
             //Dectectamos el movimiento en un vector
-        mov = new Vector2(
+             mov = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
             );
-        /*
-        Vector3 mov = new Vector3(
-                Input.GetAxisRaw("Horizontal"),
-                Input.GetAxisRaw("Vertical"),
-                0
-        );
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            transform.position + mov,
-            speed * Time.deltaTime
-            );
-        */
-        if (mov != Vector2.zero)
-        {
+       
+           if (mov != Vector2.zero)
+           {
             anim.SetFloat("MovX", mov.x);
             anim.SetFloat("MovY", mov.y);
             anim.SetBool("Walking", true);
-        }
-        else
-        {
+           }
+           else
+           {
             anim.SetBool("Walking", false);
+           }
+
         }
+        if (Input.GetKeyDown(KeyCode.J))
+            Interact();
+
+    }
+    
+    
+            
+    void Interact()
+    {
+        var facingDir = new Vector3(anim.GetFloat("MovX"), anim.GetFloat("MovY"));
+        var interactPos = transform.position + facingDir;
+
+        //Debug.DrawLine(transform.position, interactPos, Color.blue, 0.5f);
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interactableLayer);
+        if (collider != null)
+        {
+            collider.GetComponent<Interactable>()?.Interact();
         }
         
     }
