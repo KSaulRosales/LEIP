@@ -1045,8 +1045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac53053fe0311ea498644ad611d73c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPosition: {x: 0, y: 0}
-  playerStorage: {fileID: 0}
+  scene: Casa_Scene1
+  playerPosition: {x: -7.5, y: 0.8}
+  playerStorage: {fileID: 11400000, guid: 305997d454d06ae4b86fbf5454c9462e, type: 2}
 --- !u!4 &2019946289
 Transform:
   m_ObjectHideFlags: 0

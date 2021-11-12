@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
+    public string scene;
+    public Vector2 playerPosition;
+    public VectorValue playerStorage;
+    Vector2 startPos = new Vector2(-7.5f, 0.8f);
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +28,9 @@ public class MenuPrincipal : MonoBehaviour
     {
         
         SceneManager.LoadScene("Casa_Scene1");
-        
+        playerStorage.initialValue = playerPosition;
+        SceneManager.LoadScene(scene);
+
     }
 
     public void CargarEscena(string nombreEscena)
