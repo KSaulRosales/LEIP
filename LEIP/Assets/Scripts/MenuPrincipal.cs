@@ -29,7 +29,6 @@ public class MenuPrincipal : MonoBehaviour
         
         SceneManager.LoadScene("Casa_Scene1");
         playerStorage.initialValue = playerPosition;
-        SceneManager.LoadScene(scene);
 
     }
 
