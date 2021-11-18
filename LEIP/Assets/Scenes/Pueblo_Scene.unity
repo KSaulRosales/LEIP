@@ -813,6 +813,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - Algunas personas dicen al vernos que mi hermana y yo nos parecemos pero
+    - "o It\u2019s like comparing apples and oranges. A mi me encanta salir a pasear
+      con mis amigos y a ella le gusta quedarse en casa leyendo libros. "
+    - "Comparing apples and oranges significa que es dif\xEDcil comparar algo de otro. "
 --- !u!1 &314992602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1053,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - "\xBFHace un buen d\xEDa para pescar no? Cuando viv\xEDa en la gran ciudad con
+      mi hijo. We were Packed like sardines,  "
+    - pero ahora yo soy el que pesco las sardinas.
+    - "Packed like sardines significa un lugar que est\xE1 muy concurrido."
 --- !u!1 &377927623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1436,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - "Mi hermana siempre se queja de que me la paso el d\xEDa leyendo, ella solo
+      lee las revistas de moda,"
+    - 'ahora estoy esperando un paquete con nuevos libros y solo me queda leer y to
+      sit tight. '
+    - Sit tight significa esperar pacientemente sin tomar acciones.
 --- !u!1 &592610370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1698,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - Cuidar de esas dos puede ser una tarea agotadora,
+    - pero salir a oler las flores siempre hace sentirme cool as a cucumber.
+    - Cool as a cucumber significa muy calmado y relajado.
 --- !u!1 &695997065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,6 +2044,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - 'Trabajar con la madera puede ser algo demandante a veces pero es mi forma de '
+    - "To bring home the bacon y adem\xE1s disfruto mucho de este trabajo."
+    - 'Bring home the bacon significa generar ingresos para mantener una familia. '
 --- !u!1 &804882475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2235,80 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857585093}
+  m_CullTransparentMesh: 0
+--- !u!1 &897415824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897415825}
+  - component: {fileID: 897415827}
+  - component: {fileID: 897415826}
+  m_Layer: 5
+  m_Name: DialogBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &897415825
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897415824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1406827403}
+  - {fileID: 2112863324}
+  m_Father: {fileID: 1085432602}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.000051498, y: 187.5}
+  m_SizeDelta: {x: 1920, y: 375}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &897415826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897415824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 04b3b0410afdcfc49a18d4492dc4983f, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &897415827
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897415824}
   m_CullTransparentMesh: 0
 --- !u!1 &909804994
 GameObject:
@@ -42227,6 +42330,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - Veo a mi muchacho muy feliz cada sale a acampar con su padre pero
+    - is not my cup of tea. Prefiero solo salir a pasear un rato en lugar de toda
+      la noche.
+    - "Not one\u2019s cup of tea significa que no disfrutas demasiado una actividad."
 --- !u!1 &1085432597
 GameObject:
   m_ObjectHideFlags: 0
@@ -42332,6 +42441,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1108403830}
+  - {fileID: 897415825}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42662,6 +42772,129 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198749455}
   m_CullTransparentMesh: 0
+--- !u!1 &1406827402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1406827403}
+  - component: {fileID: 1406827405}
+  - component: {fileID: 1406827404}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1406827403
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406827402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 897415825}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -183, y: 0}
+  m_SizeDelta: {x: -426.93396, y: -50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1406827404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406827402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 076e32559c968704b820545086dc223e, type: 3}
+    m_FontSize: 100
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 120
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "TEXTO LARGO PARA DEMOSTRAR QUE ES UN BUEN TEXTO AQU\xCD"
+--- !u!222 &1406827405
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406827402}
+  m_CullTransparentMesh: 0
+--- !u!1 &1420970164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420970166}
+  - component: {fileID: 1420970165}
+  m_Layer: 0
+  m_Name: GameControler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1420970165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420970164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33923d292a61584ea9b295d8950321e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 897415824}
+  dialogText: {fileID: 1406827404}
+  letterPerSecond: 50
+--- !u!4 &1420970166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420970164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.504507, y: -5.2694864, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430327342
 GameObject:
   m_ObjectHideFlags: 0
@@ -42803,6 +43036,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - "Hoy ha sido un d\xEDa bastante productivo pero ya casi es mi hora"
+    - " to hit the sack que ma\xF1ana me levanto temprano para ir a clases."
+    - Hit the sack significa ir a dormir.
 --- !u!1 &1450960588
 GameObject:
   m_ObjectHideFlags: 0
@@ -45324,6 +45562,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - Mudarse a este pueblo fue food for thought para mi padre y yo,
+    - "s alucinante el cambio de ambiente, ahora tomo el bus para ir a la escuela
+      y tambi\xE9n para ir a la ciudad."
+    - 'Food for thought significa algo que vale la pena pensar. '
 --- !u!1 &1624216577
 GameObject:
   m_ObjectHideFlags: 0
@@ -85086,6 +85330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dba8819a17cb34498337199a4563c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - Veo que has aprendido mucho, pongamos a prueba tus conocimientos.
 --- !u!1 &1894099454
 GameObject:
   m_ObjectHideFlags: 0
@@ -85473,6 +85720,78 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040106808}
+  m_CullTransparentMesh: 0
+--- !u!1 &2112863323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2112863324}
+  - component: {fileID: 2112863326}
+  - component: {fileID: 2112863325}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2112863324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112863323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 897415825}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -237.2, y: -0.0000085831}
+  m_SizeDelta: {x: 343.78253, y: 325}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2112863325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112863323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &2112863326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112863323}
   m_CullTransparentMesh: 0
 --- !u!1 &2131624517
 GameObject:
