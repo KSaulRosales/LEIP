@@ -1056,8 +1056,8 @@ MonoBehaviour:
   dialog:
     lines:
     - "\xBFHace un buen d\xEDa para pescar no? Cuando viv\xEDa en la gran ciudad con
-      mi hijo. We were Packed like sardines,  "
-    - pero ahora yo soy el que pesco las sardinas.
+      mi hijo.   "
+    - We were Packed like sardines, pero ahora yo soy el que pesco las sardinas.
     - "Packed like sardines significa un lugar que est\xE1 muy concurrido."
 --- !u!1 &377927623
 GameObject:
@@ -42858,6 +42858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420970166}
+  - component: {fileID: 1420970167}
   - component: {fileID: 1420970165}
   m_Layer: 0
   m_Name: GameControler
@@ -42895,6 +42896,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1420970167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420970164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3878152e9436c438eadfb866ea2c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldCamera: {fileID: 1944897962}
 --- !u!1 &1430327342
 GameObject:
   m_ObjectHideFlags: 0
@@ -45565,7 +45579,7 @@ MonoBehaviour:
   dialog:
     lines:
     - Mudarse a este pueblo fue food for thought para mi padre y yo,
-    - "s alucinante el cambio de ambiente, ahora tomo el bus para ir a la escuela
+    - "es alucinante el cambio de ambiente, ahora tomo el bus para ir a la escuela
       y tambi\xE9n para ir a la ciudad."
     - 'Food for thought significa algo que vale la pena pensar. '
 --- !u!1 &1624216577

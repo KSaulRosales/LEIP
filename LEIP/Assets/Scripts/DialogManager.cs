@@ -32,7 +32,7 @@ public class DialogManager : MonoBehaviour
 
         this.dialog = dialog;
         dialogBox.SetActive(true);
-        StartCoroutine(TypeDialog(dialog.Lines[0]));
+        StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
         
     }
 
