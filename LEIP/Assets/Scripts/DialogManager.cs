@@ -7,24 +7,26 @@ using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
     [SerializeField] GameObject dialogBox;
+    // [SerializeField] GameObject imagen;
     [SerializeField] Text dialogText;
     [SerializeField] int letterPerSecond;
 
     public event Action OnShowDialog;
     public event Action OnCloseDialog;
 
-    public static DialogManager Instance { get; private set; } 
+    public static DialogManager Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
     } 
-
+    
     Dialog dialog;
+    ImageNPC Imagen;
     int currentLine = 0;
     bool isTyping;
 
-    public IEnumerator ShowDialog(Dialog dialog)
+    public IEnumerator ShowDialog(Dialog dialog, ImageNPC imagen)
     {
         yield return new WaitForEndOfFrame();
 
@@ -32,7 +34,10 @@ public class DialogManager : MonoBehaviour
 
         this.dialog = dialog;
         dialogBox.SetActive(true);
-        StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
+        this.Imagen = imagen;
+        Imagen.abrir();
+        //image.setActive(true);
+        StartCoroutine(TypeDialog(dialog.Lines[0]));
         
     }
 
@@ -50,6 +55,7 @@ public class DialogManager : MonoBehaviour
                 currentLine = 0;
                 dialogBox.SetActive(false);
                 OnCloseDialog?.Invoke();
+                Imagen.cerrar();
             }
         }
     }

@@ -2,24 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle, Dialog }
+public enum GameState { FreeRoam, Dialog }
 
 public class GameController : MonoBehaviour
 {
-    //[SerializeField] PlayerController playerController;
-    // [SerializeField] BattleSystem battleSystem;
-    [SerializeField] Camera worldCamera;
-
+    [SerializeField] Player playerController;
     GameState state;
-    private void Awake()
-    {
-        //conditionsDB.Init();
-    }
+   
     void Start()
     {
-        // playerController.OnEncountered += StartBattle;
-        //battleSystem.OnBattleOver += EndBattle;
-
+       
         DialogManager.Instance.OnShowDialog += () =>
         { 
             state = GameState.Dialog;
@@ -36,7 +28,11 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(state == GameState.Dialog)
+        if(state == GameState.FreeRoam)
+        {
+            playerController.HandleUpdate();
+        }
+        else if (state ==GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
         }

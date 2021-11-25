@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     }
     
     // Update is called once per frame
-    void Update()
+    public void HandleUpdate()
     {
         if (!PauseMenu.GameIsPaused)
         {
@@ -44,7 +44,6 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.J))
             Interact();
-
     }
     
     
