@@ -223,8 +223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -227.71997, y: -0.35004}
+  m_SizeDelta: {x: 425.08582, y: 367.1773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &99113103
 MonoBehaviour:
@@ -714,7 +714,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 5
-  m_Depth: -2
+  m_Depth: 2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -895,10 +895,10 @@ MonoBehaviour:
   dialog:
     lines:
     - Algunas personas dicen al vernos que mi hermana y yo nos parecemos pero
-    - "o It\u2019s like comparing apples and oranges. A mi me encanta salir a pasear
-      con mis amigos "
-    - 'y a ella le gusta quedarse en casa leyendo libros. '
-    - "Comparing apples and oranges significa que es dif\xEDcil comparar algo de otro. "
+    - "It\u2019s like comparing apples and oranges. A mi me encanta salir a pasear
+      con mis amigos"
+    - Y a ella le gusta quedarse en casa leyendo libros.
+    - "Comparing apples and oranges significa que es dif\xEDcil comparar algo de otro."
   FaceImage:
     imagen: {fileID: 680371405}
 --- !u!1 &314992602
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   dialog:
     lines:
     - "\xBFHace un buen d\xEDa para pescar no? Cuando viv\xEDa en la gran ciudad con
-      mi hijo.   "
+      mi hijo."
     - We were Packed like sardines, pero ahora yo soy el que pesco las sardinas.
     - "Packed like sardines significa un lugar que est\xE1 muy concurrido."
   FaceImage:
@@ -1599,8 +1599,8 @@ MonoBehaviour:
     lines:
     - "Mi hermana siempre se queja de que me la paso el d\xEDa leyendo, ella solo
       lee las revistas de moda,"
-    - 'ahora estoy esperando un paquete con nuevos libros y solo me queda leer y to
-      sit tight. '
+    - Ahora estoy esperando un paquete con nuevos libros y solo me queda leer y To
+      sit tight.
     - Sit tight significa esperar pacientemente sin tomar acciones.
   FaceImage:
     imagen: {fileID: 1970080745}
@@ -1832,8 +1832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -226.98, y: -0.35001}
+  m_SizeDelta: {x: 426.4148, y: 367.17737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &631154885
 MonoBehaviour:
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   dialog:
     lines:
     - Cuidar de esas dos puede ser una tarea agotadora,
-    - pero salir a oler las flores siempre hace sentirme cool as a cucumber.
+    - Pero salir a oler las flores siempre hace sentirme Cool as a cucumber.
     - Cool as a cucumber significa muy calmado y relajado.
   FaceImage:
     imagen: {fileID: 99113101}
@@ -2052,8 +2052,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -226.39, y: -0.35002}
+  m_SizeDelta: {x: 427.63892, y: 367.17743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680371407
 MonoBehaviour:
@@ -2433,9 +2433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines:
-    - 'Trabajar con la madera puede ser algo demandante a veces pero es mi forma de '
+    - Trabajar con la madera puede ser algo demandante a veces pero es mi forma de
     - "To bring home the bacon y adem\xE1s disfruto mucho de este trabajo."
-    - 'Bring home the bacon significa generar ingresos para mantener una familia. '
+    - Bring home the bacon significa generar ingresos para mantener una familia.
   FaceImage:
     imagen: {fileID: 631154883}
 --- !u!1 &804882475
@@ -43046,7 +43046,7 @@ MonoBehaviour:
   dialog:
     lines:
     - Veo a mi muchacho muy feliz cada sale a acampar con su padre pero
-    - is not my cup of tea. Prefiero solo salir a pasear un rato en lugar de toda
+    - Is not my cup of tea. Prefiero solo salir a pasear un rato en lugar de toda
       la noche.
     - "Not one\u2019s cup of tea significa que no disfrutas demasiado una actividad."
   FaceImage:
@@ -43594,8 +43594,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -225.54, y: -0.35003}
+  m_SizeDelta: {x: 429.38123, y: 367.17737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308969118
 MonoBehaviour:
@@ -43666,8 +43666,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -227.5, y: -0.35003}
+  m_SizeDelta: {x: 425.47522, y: 367.17737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359249673
 MonoBehaviour:
@@ -43738,8 +43738,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -205.1, y: 0}
-  m_SizeDelta: {x: -470.2655, y: -30}
+  m_AnchoredPosition: {x: -244.7, y: 0}
+  m_SizeDelta: {x: -549.5532, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406827404
 MonoBehaviour:
@@ -43772,7 +43772,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "TEXTO LARGO PARA DEMOSTRAR QUE ES UN BUEN TEXTO AQU\xCD"
+  m_Text: Texto de Ejemplo Sample Text Texto de Ejemplo
 --- !u!222 &1406827405
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43985,7 +43985,7 @@ MonoBehaviour:
   dialog:
     lines:
     - "Hoy ha sido un d\xEDa bastante productivo pero ya casi es mi hora"
-    - " to hit the sack que ma\xF1ana me levanto temprano para ir a clases."
+    - "To hit the sack que ma\xF1ana me levanto temprano para ir a clases."
     - Hit the sack significa ir a dormir.
   FaceImage:
     imagen: {fileID: 1359249671}
@@ -46330,8 +46330,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -226.54, y: -0.35006}
+  m_SizeDelta: {x: 427.47485, y: 367.17737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464401790
 MonoBehaviour:
@@ -46511,10 +46511,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines:
-    - Mudarse a este pueblo fue food for thought para mi padre y yo,
-    - "es alucinante el cambio de ambiente, ahora tomo el bus para ir a la escuela
+    - Mudarse a este pueblo fue Food for thought para mi padre y yo,
+    - "Es alucinante el cambio de ambiente, ahora tomo el bus para ir a la escuela
       y tambi\xE9n para ir a la ciudad."
-    - 'Food for thought significa algo que vale la pena pensar. '
+    - Food for thought significa algo que vale la pena pensar.
   FaceImage:
     imagen: {fileID: 1464401788}
 --- !u!1 &1624216577
@@ -87699,8 +87699,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -227.78, y: -0.35006}
+  m_SizeDelta: {x: 424.98706, y: 367.17737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970080747
 MonoBehaviour:
@@ -87771,8 +87771,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -227.08, y: -0.35007}
+  m_SizeDelta: {x: 426.31335, y: 367.1773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042154503
 MonoBehaviour:
@@ -87843,8 +87843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -252.77, y: -0.0000085831}
-  m_SizeDelta: {x: 374.92395, y: 325}
+  m_AnchoredPosition: {x: -226.3, y: -0.35}
+  m_SizeDelta: {x: 427.90515, y: 367.17743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2112863325
 MonoBehaviour:
