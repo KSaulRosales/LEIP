@@ -1770,6 +1770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 610071760}
+  - component: {fileID: 610071761}
   m_Layer: 0
   m_Name: PlayerCombat
   m_TagString: Untagged
@@ -1798,6 +1799,19 @@ RectTransform:
   m_AnchoredPosition: {x: -2, y: 9.5}
   m_SizeDelta: {x: 100, y: 145.40498}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &610071761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610071759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a73ec41b8e351dd4e9c7c3a8a49ff9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
 --- !u!1 &631154883
 GameObject:
   m_ObjectHideFlags: 0
@@ -43349,6 +43363,7 @@ GameObject:
   - component: {fileID: 1188692951}
   - component: {fileID: 1188692953}
   - component: {fileID: 1188692952}
+  - component: {fileID: 1188692954}
   m_Layer: 0
   m_Name: VidaPlayer
   m_TagString: Untagged
@@ -43388,16 +43403,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22099468, g: 0.754717, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1522676bc5966f34ba82ea17957da15f, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -43410,6 +43425,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188692950}
   m_CullTransparentMesh: 0
+--- !u!114 &1188692954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188692950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bab9a33fff754142bfc02de042adc9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 100
 --- !u!1 &1198749455
 GameObject:
   m_ObjectHideFlags: 0
@@ -46671,6 +46699,7 @@ GameObject:
   - component: {fileID: 1629298146}
   - component: {fileID: 1629298145}
   - component: {fileID: 1629298144}
+  - component: {fileID: 1629298147}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -46762,6 +46791,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1629298147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629298142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6054ddf3f89ae1479295cf1cf277ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthImage: {fileID: 1188692952}
 --- !u!1 &1722769814
 GameObject:
   m_ObjectHideFlags: 0
@@ -46805,6 +46847,7 @@ GameObject:
   - component: {fileID: 1763778730}
   - component: {fileID: 1763778732}
   - component: {fileID: 1763778731}
+  - component: {fileID: 1763778733}
   m_Layer: 0
   m_Name: VidaVillain
   m_TagString: Untagged
@@ -46844,16 +46887,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22099468, g: 0.754717, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1522676bc5966f34ba82ea17957da15f, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -46866,6 +46909,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763778729}
   m_CullTransparentMesh: 0
+--- !u!114 &1763778733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763778729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c1bab5b18ab154d8d04b546170dcb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 0
 --- !u!1 &1810301431
 GameObject:
   m_ObjectHideFlags: 0
@@ -87907,6 +87963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2128131162}
+  - component: {fileID: 2128131163}
   m_Layer: 0
   m_Name: VillainCombat
   m_TagString: Untagged
@@ -87935,6 +87992,19 @@ RectTransform:
   m_AnchoredPosition: {x: -388, y: 9.5}
   m_SizeDelta: {x: 100, y: 145.40498}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2128131163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128131161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8814a41cb363dd44bfa46444646c393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
 --- !u!1 &2131624517
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,8 @@ public class QuizManager : MonoBehaviour
 
     public Text QuestionTxt;
 
+    CombatController VidaPlayer;
+
     private void Start()
     {
         generateQuestion();
@@ -27,11 +29,11 @@ public class QuizManager : MonoBehaviour
     {
         QnA.RemoveAt(currentQuestion);
         StartCoroutine(WaitForNext());
-
     }
 
     public void wrong()
     {
+        //VidaPlayer.Health = VidaPlayer.Health - 25;
         QnA.RemoveAt(currentQuestion);
         StartCoroutine(WaitForNext());
     }
