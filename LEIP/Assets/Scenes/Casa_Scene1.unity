@@ -368,6 +368,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1428236781}
   smoothing: 0.6
+--- !u!1 &399304563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 399304566}
+  - component: {fileID: 399304565}
+  - component: {fileID: 399304564}
+  m_Layer: 0
+  m_Name: GameControler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &399304564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399304563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33923d292a61584ea9b295d8950321e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  letterPerSecond: 100
+--- !u!114 &399304565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399304563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3878152e9436c438eadfb866ea2c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 1428236779}
+--- !u!4 &399304566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399304563}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.504507, y: -5.2694864, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631470313
 GameObject:
   m_ObjectHideFlags: 0
@@ -7426,10 +7486,10 @@ MonoBehaviour:
   startingPosition: {fileID: 11400000, guid: 305997d454d06ae4b86fbf5454c9462e, type: 2}
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   solidObjectsLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!212 &1428236780
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
     }
     
     
-            
+        
     void Interact()
     {
         var facingDir = new Vector3(anim.GetFloat("MovX"), anim.GetFloat("MovY"));
@@ -61,6 +61,7 @@ public class Player : MonoBehaviour
         }
         
     }
+   
     private void FixedUpdate()
     {
         //Nos movemos en el fixed por las físicas
