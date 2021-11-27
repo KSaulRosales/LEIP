@@ -38,7 +38,8 @@ public class DialogManager : MonoBehaviour
         Imagen.abrir();
         //image.setActive(true);
         StartCoroutine(TypeDialog(dialog.Lines[0]));
-        
+        int n=1;
+        GameController.Instance.verificar(n);
     }
 
     public void HandleUpdate()

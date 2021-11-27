@@ -15,8 +15,11 @@ public class GameController : MonoBehaviour
     {
         Instance = this;
     }
-   
-    
+    int npc = 0;
+    public void verificar(int npc1)
+    {
+        npc = npc1;
+    }
     void Start()
     {
             DialogManagerV.Instance.OnShowDialog += () =>
@@ -29,13 +32,24 @@ public class GameController : MonoBehaviour
                 if (state == GameState.Dialog)
                     state = GameState.FreeRoam;
             };
-        
+        if (npc == 1)
+        {
+            DialogManager.Instance.OnShowDialog += () =>
+            {
+                state = GameState.Dialog;
+            };
+
+            DialogManager.Instance.OnCloseDialog += () =>
+            {
+                if (state == GameState.Dialog)
+                    state = GameState.FreeRoam;
+            };
+        }
     }
     
     // Update is called once per frame
     private void Update()
     {
-        
             if (state == GameState.FreeRoam)
             {
                 playerController.HandleUpdate();
@@ -45,6 +59,18 @@ public class GameController : MonoBehaviour
             {
                 DialogManagerV.Instance.HandleUpdate();
             }
+        if (npc == 1)
+        {
+            if (state == GameState.FreeRoam)
+            {
+                playerController.HandleUpdate();
+            }
+
+            else if (state == GameState.Dialog)
+            {
+                DialogManager.Instance.HandleUpdate();
+            }
+        }
     }
     
 }
