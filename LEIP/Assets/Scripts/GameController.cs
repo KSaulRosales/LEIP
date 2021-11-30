@@ -22,18 +22,6 @@ public class GameController : MonoBehaviour
     }
     void Start()
     {
-            DialogManagerV.Instance.OnShowDialog += () =>
-            {
-                state = GameState.Dialog;
-            };
-
-            DialogManagerV.Instance.OnCloseDialog += () =>
-            {
-                if (state == GameState.Dialog)
-                    state = GameState.FreeRoam;
-            };
-        if (npc == 1)
-        {
             DialogManager.Instance.OnShowDialog += () =>
             {
                 state = GameState.Dialog;
@@ -44,7 +32,6 @@ public class GameController : MonoBehaviour
                 if (state == GameState.Dialog)
                     state = GameState.FreeRoam;
             };
-        }
     }
     
     // Update is called once per frame
@@ -57,20 +44,8 @@ public class GameController : MonoBehaviour
 
             else if (state == GameState.Dialog)
             {
-                DialogManagerV.Instance.HandleUpdate();
-            }
-        if (npc == 1)
-        {
-            if (state == GameState.FreeRoam)
-            {
-                playerController.HandleUpdate();
-            }
-
-            else if (state == GameState.Dialog)
-            {
                 DialogManager.Instance.HandleUpdate();
             }
-        }
     }
     
 }
