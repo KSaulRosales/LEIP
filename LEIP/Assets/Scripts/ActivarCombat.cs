@@ -7,7 +7,8 @@ public class ActivarCombat : MonoBehaviour
     [SerializeField] Camera map;
 
     public GameObject MenuVillano;
-    [SerializeField] GameObject player;
+    public GameObject player;
+    public Transform teleportTarget;
 
     public Vector2 playerPosition;
    
@@ -19,11 +20,10 @@ public class ActivarCombat : MonoBehaviour
 
     public void CerrarBox()
     {
-        MenuVillano.SetActive(false);
-       // player.SetActive(true);
-        
-       
-        //playerPosition = new Vector2 (-4.01f, 30.82f);
 
+        player.transform.position = teleportTarget.transform.position;
+        MenuVillano.SetActive(false);
+        player.SetActive(true);
+        
     }
 }
