@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\HealthBars.cs" />
     <Compile Include="Assets\Scripts\HealthBarVillian.cs" />
     <Compile Include="Assets\Scripts\ImageNPC.cs" />
+    <Compile Include="Assets\Scripts\IniciarCombate.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\NPCController.cs" />

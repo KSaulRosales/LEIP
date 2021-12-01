@@ -15,11 +15,7 @@ public class GameController : MonoBehaviour
     {
         Instance = this;
     }
-    int npc = 0;
-    public void verificar(int npc1)
-    {
-        npc = npc1;
-    }
+    
     void Start()
     {
             DialogManager.Instance.OnShowDialog += () =>

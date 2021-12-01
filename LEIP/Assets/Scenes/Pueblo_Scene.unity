@@ -653,12 +653,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 194643755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97a6940b0d182084b8aef23d8fdaf9f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0380f1d57cbbd8b4b9987d0cc9fefc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Casa_Scene2
-  playerPosition: {x: 6.58, y: 2.782}
-  playerStorage: {fileID: 11400000, guid: 47a4fdbf6c2efdd4989f6503052d29f0, type: 2}
+  MenuCombate: {fileID: 292655349}
+  player: {fileID: 909804994}
 --- !u!61 &194643757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -995,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &292655350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44753,6 +44752,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   map: {fileID: 1944897962}
   MenuVillano: {fileID: 292655349}
+  player: {fileID: 909804994}
+  playerPosition: {x: -4.01, y: 30.82}
 --- !u!4 &1440061004
 Transform:
   m_ObjectHideFlags: 0
