@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
 
     public GameObject QuizPanel;
+    public GameObject ScorePanel;
 
     public Button res1;
     public Button res2;
@@ -17,23 +19,50 @@ public class QuizManager : MonoBehaviour
     public Button res4;
 
     public Text QuestionTxt;
+    public Text ScoreTxt;
+    public Text MessageTxt;
+
+    int totalQuestions = 0;
+    public int score;
 
     CombatController VidaPlayer;
 
     private void Start()
     {
+        totalQuestions = QnA.Count;
+        ScorePanel.SetActive(false);
         generateQuestion();
+    }
+
+    public void Continuar()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
+
+    void GameOver()
+    {
+        if (score > 3)
+        {
+            MessageTxt.text = "Has superado el reto:";
+        }
+        else
+        {
+            MessageTxt.text = "Has perdido el reto:";
+        }
+        ScorePanel.SetActive(true);
+        ScoreTxt.text = score + "/" + totalQuestions;
     }
 
     public void correct()
     {
+        score += 1;
         QnA.RemoveAt(currentQuestion);
         StartCoroutine(WaitForNext());
     }
 
     public void wrong()
     {
-        //VidaPlayer.Health = VidaPlayer.Health - 25;
+        
         QnA.RemoveAt(currentQuestion);
         StartCoroutine(WaitForNext());
     }
@@ -94,6 +123,7 @@ public class QuizManager : MonoBehaviour
         {
             Debug.Log("Fin de las preguntas");
             QuizPanel.SetActive(false);
+            GameOver();
         }
 
     }

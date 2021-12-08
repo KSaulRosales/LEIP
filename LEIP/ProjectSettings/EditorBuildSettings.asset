@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pueblo_Scene.unity
     guid: 60c83475dacdba9469b677da5227358a
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: e6c2ecdfde2077a4c981838fdd3052af
   m_configObjects: {}
