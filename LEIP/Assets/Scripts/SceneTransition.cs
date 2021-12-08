@@ -10,12 +10,19 @@ public class SceneTransition : MonoBehaviour
     public VectorValue playerStorage;
     Vector2 startPos=new Vector2(-7.5f,0.8f);
 
+    public Animator transision;
+    public float transitionTime = 1f;
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player") && !collision.isTrigger)
         {
             playerStorage.initialValue = playerPosition;
+
             SceneManager.LoadScene(scene);
+            //cambioEscena();
         }
+
     }
+    
 }
