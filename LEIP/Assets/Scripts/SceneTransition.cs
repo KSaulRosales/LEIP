@@ -20,7 +20,7 @@ public class SceneTransition : MonoBehaviour
             playerStorage.initialValue = playerPosition;
 
             SceneManager.LoadScene(scene);
-            //cambioEscena();
+            
         }
 
     }

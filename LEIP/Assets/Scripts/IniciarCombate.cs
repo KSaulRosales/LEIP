@@ -7,7 +7,7 @@ public class IniciarCombate : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject MenuCombate;
     [SerializeField] GameObject player;
-
+    
 
 
     public void OnTriggerEnter2D(Collider2D collision)

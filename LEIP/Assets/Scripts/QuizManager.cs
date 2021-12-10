@@ -27,6 +27,8 @@ public class QuizManager : MonoBehaviour
 
     CombatController VidaPlayer;
 
+    public Animator Anim;
+
     private void Start()
     {
         totalQuestions = QnA.Count;
@@ -36,6 +38,7 @@ public class QuizManager : MonoBehaviour
 
     public void Continuar()
     {
+        Anim.SetTrigger("Star");
         SceneManager.LoadScene("Creditos");
     }
 

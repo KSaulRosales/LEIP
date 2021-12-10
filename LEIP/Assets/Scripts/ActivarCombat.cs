@@ -9,14 +9,24 @@ public class ActivarCombat : MonoBehaviour
     public GameObject MenuVillano;
     public GameObject player;
     public Transform teleportTarget;
-
+    public Animator Anim;
     public Vector2 playerPosition;
-   
+   public  GameObject colision;
     public void ActivaCombate()
     {
         MenuVillano.SetActive(false);
-        map.gameObject.SetActive(false);
+        colision.SetActive(false);
+        Anim.SetTrigger("Star");
+        player.SetActive(true);
+        StartCoroutine(WaitForNext());
     }
+    IEnumerator WaitForNext()
+    {
+        yield return new WaitForSeconds(1);
+        map.gameObject.SetActive(false);
+        player.SetActive(false);
+    }
+   
 
     public void CerrarBox()
     {
