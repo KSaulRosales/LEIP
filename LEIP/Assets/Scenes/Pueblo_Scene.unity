@@ -795,6 +795,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 2705448854043305388, guid: 7b47bc31e715dfb42b3f805da7ae689a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b47bc31e715dfb42b3f805da7ae689a, type: 3}
 --- !u!95 &226476981 stripped
@@ -44766,8 +44771,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 670, y: 3.6}
-  m_SizeDelta: {x: 433.2135, y: 439.413}
+  m_AnchoredPosition: {x: 688.73, y: -0.86}
+  m_SizeDelta: {x: 470.6776, y: 456.85965}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233085488
 MonoBehaviour:
@@ -45089,8 +45094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Antes de avanzar \xBFYa habl\xE9 con todos los persoanjes del pueblo?\n\xBFEstoy
-    seguro de querer avanzar?"
+  m_Text: "Antes de irme deber\xEDa hablar con todas\nlas personas del pueblo...\n\xBFContinuar?"
 --- !u!222 &1362319949
 CanvasRenderer:
   m_ObjectHideFlags: 0
